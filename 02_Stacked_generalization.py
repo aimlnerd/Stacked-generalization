@@ -14,6 +14,9 @@ submission to the competition:
 Note: if you increase the number of estimators of the classifiers,
 e.g. n_estimators=1000, you get a better score/rank on the private
 test set.
+
+Download data from here
+https://www.kaggle.com/c/bioresponse/data
 """
 
 from __future__ import division
