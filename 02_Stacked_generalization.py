@@ -52,11 +52,11 @@ if __name__ == '__main__':
             print ("Length of rest",len(rest))
             print ("Length of ithfold",len(ithfold))
             print ()
-
-            X_rest = X[rest]
-            y_rest = y[rest]
-            X_ithfold = X[ithfold]
-            y_ithfold = y[ithfold]
+# .iloc is prefered over .values to return dataframe instead of np array without columns labels
+            X_rest = X.iloc[rest]
+            y_rest = y.iloc[rest]
+            X_ithfold = X.iloc[ithfold]
+            y_ithfold = y.iloc[ithfold]
 #Building model on rest (k-1) folds
             clf.fit(X_rest, y_rest)
 #predicting probability on ith fold
